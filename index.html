@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Parking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a2d9d6a64f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Smart Parking
+        </div>
+
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#problemas">Problemas</a>
+            <a href="#solucao">Solução</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#tecnologias">Tecnologias</a>
+        </nav>
+
+        <button class="monitor-btn">
+            Monitoramento Online
+        </button>
+
+    </header>
+
+    <!-- CONTAINER -->
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <h1>
+                    Estacionamento Inteligente
+                </h1>
+
+                <p>
+                    Sistema inteligente para monitoramento de vagas em tempo real,
+                    melhorando a organização e reduzindo congestionamentos internos.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn">
+                        Ver Dashboard
+                    </button>
+
+                    <button class="secondary-btn">
+                        Saiba Mais
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- DASHBOARD HERO -->
+
+            <div class="hero-dashboard">
+
+                <div class="mini-card">
+
+                    <span>Total</span>
+
+                    <h3 id="totalVagas">
+                        20
+                    </h3>
+
+                </div>
+
+                <div class="mini-card green">
+
+                    <span>Livres</span>
+
+                    <h3 id="livres">
+                        0
+                    </h3>
+
+                </div>
+
+                <div class="mini-card red">
+
+                    <span>Ocupadas</span>
+
+                    <h3 id="ocupadas">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROBLEMAS -->
+
+        <section id="problemas">
+
+            <h2>
+                Problemas Identificados
+            </h2>
+
+            <div class="cards-grid">
+
+                <div class="card">
+
+                    <i class="fas fa-car"></i>
+
+                    <h3>
+                        Dificuldade em encontrar vagas
+                    </h3>
+
+                    <p>
+                        Motoristas perdem tempo circulando pelo estacionamento.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fas fa-road"></i>
+
+                    <h3>
+                        Congestionamento interno
+                    </h3>
+
+                    <p>
+                        Fluxo desorganizado em horários de pico.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fas fa-clock"></i>
+
+                    <h3>
+                        Tempo perdido
+                    </h3>
+
+                    <p>
+                        Longos períodos procurando vagas disponíveis.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fas fa-satellite-dish"></i>
+
+                    <h3>
+                        Falta de monitoramento
+                    </h3>
+
+                    <p>
+                        Ausência de informações em tempo real.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SOLUÇÃO -->
+
+        <section id="solucao">
+
+            <h2>
+                Solução Proposta
+            </h2>
+
+            <div class="solution-grid">
+
+                <div class="solution-box">
+
+                    <h3>
+                        Monitoramento Inteligente
+                    </h3>
+
+                    <ul>
+                        <li>Detecção de vagas livres e ocupadas</li>
+                        <li>Painéis digitais informativos</li>
+                        <li>Atualização em tempo real</li>
+                        <li>Organização do fluxo de veículos</li>
+                    </ul>
+
+                </div>
+
+                <div class="solution-box">
+
+                    <h3>
+                        Sistema Digital
+                    </h3>
+
+                    <ul>
+                        <li>Dashboard administrativo</li>
+                        <li>Monitoramento online</li>
+                        <li>Visualização das vagas</li>
+                        <li>Controle inteligente do estacionamento</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <div class="dashboard-header">
+
+                <h2>
+                    Dashboard Inteligente
+                </h2>
+
+                <div class="status-online"></div>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3>Total de vagas</h3>
+
+                    <p id="dashboardTotal">
+                        20
+                    </p>
+
+                </div>
+
+                <div class="stat-card green-border">
+
+                    <h3>Vagas livres</h3>
+
+                    <p id="dashboardLivres">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="stat-card red-border">
+
+                    <h3>Vagas ocupadas</h3>
+
+                    <p id="dashboardOcupadas">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="stat-card blue-border">
+
+                    <h3>Ocupação</h3>
+
+                    <p id="ocupacao">
+                        0%
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- GRID -->
+
+            <div class="parking-grid" id="parkingGrid">
+
+            </div>
+
+        </section>
+
+        <!-- TECNOLOGIAS -->
+
+        <section id="tecnologias">
+
+            <h2>
+                Tecnologias Utilizadas
+            </h2>
+
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    HTML5
+                </div>
+
+                <div class="tech-card">
+                    CSS3
+                </div>
+
+                <div class="tech-card">
+                    JavaScript
+                </div>
+
+                <div class="tech-card">
+                    Dashboard Web
+                </div>
+
+                <div class="tech-card">
+                    Responsividade
+                </div>
+
+                <div class="tech-card">
+                    Monitoramento Digital
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- JUSTIFICATIVA -->
+
+        <section class="justificativa">
+
+            <h2>
+                Justificativa
+            </h2>
+
+            <p>
+                O sistema Smart Parking reduz o tempo de busca por vagas,
+                melhora o fluxo de veículos e fornece informações em tempo real
+                para motoristas e administradores.
+            </p>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                Smart Parking © 2026
+            </p>
+
+            <p>
+                Projeto acadêmico de Estacionamento Inteligente
+            </p>
+
+        </footer>
+
+    </main>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
